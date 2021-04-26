@@ -43,6 +43,13 @@
                 }
                 &.has-dropdown{
                     flex-direction: column;
+                    &>a{
+                        padding-right: 50px;
+                        position: relative;
+                        background-repeat: no-repeat;
+                        background-position: right 24px center;
+                        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7ZLBDYAgDEWLJ7g5gqu4ATfYxhGMW7AFIziCboKQwIWUVuMRXkLS/NKXHgow6BCt9fzn31QHSqnNWnvFt0CD1JNSnsaYnRWGEI5cekyaM59qIcRR9wU0NihDkdU5d1M5K8SGy9aUjBQiUuBkrBCRkrJPvD2nQQ88yggsRfu08wEAAAAASUVORK5CYII=');
+                    }
 
                     ul{
                         margin: 0;
@@ -66,6 +73,9 @@
                     }
                     &.dropdown-open{
                         background-color: #3DC5FF;
+                        &>a{
+                            color: $white;
+                        }
                     }
                 }
                 a{
