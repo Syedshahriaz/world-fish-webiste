@@ -1,0 +1,78 @@
+.mailbox{
+    top: 50%;
+    right: rem(10px);
+    position: fixed;
+    cursor: pointer;
+    width: rem(54px);
+    height: rem(54px);
+    border-radius: 50%;
+    background-size: rem(24px);
+    background-color: $primary;
+    background-position: center;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/icons/mail.png');
+
+    &__container{
+        bottom: 0;
+        display: none;
+        z-index: 1024;
+        position: fixed;
+        right: rem(10px);
+        width: rem(630px);
+        background-color: $white;
+        box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.15);
+        @include media-breakpoint-down(sm){
+            width: 100%;
+        }
+        &__head{
+            display: flex;
+            align-items: center;
+            background-color: $primary;
+            padding: rem(20px) rem(30px);
+            justify-content: space-between;
+            border-radius: rem(5px) rem(5px) 0 0;
+            h5{
+                color: $white;
+                margin-bottom: 0;
+            }
+        }
+        &__body{
+            padding: rem(30px) rem(30px) 0 rem(30px);
+
+            textarea{
+                border: 0;
+                padding: 0;
+                min-height: rem(240px);
+            }
+        }
+        &__close{
+            display: block;
+            width: rem(30px);
+            height: rem(30px);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("../../assets/images/icons/close.png");
+        }
+        &__footer{
+            padding: rem(20px) rem(30px);
+            border-top: 1px solid $silver;
+            .btn{
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            .send-mail-btn{
+                margin-right: rem(10px);
+                padding: rem(8px) rem(20px);
+                img{
+                    margin-left: rem(7px);
+                }
+            }
+            .file-btn, .attachment-btn, .img-btn{
+                input{display: none;}
+            }
+        }
+    }
+}

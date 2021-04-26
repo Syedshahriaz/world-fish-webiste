@@ -1,0 +1,16 @@
+.header-area{
+    .main-nav{
+        display: flex;
+        align-items: center;
+        min-height: rem(80px);
+        &-toggler{
+            border: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+        .back-icon{
+            color: $body-gray;
+            text-decoration: underline;
+        }
+    }
+}

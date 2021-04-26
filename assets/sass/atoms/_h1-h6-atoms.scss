@@ -1,0 +1,47 @@
+@media screen {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $secondary;
+    font-family: $poppins_medium;
+  }
+
+  h1{
+    font-size: rem(24px);
+    @include media-breakpoint-down(md) {
+      font-size: rem(20px);
+    }
+  }
+  h2{
+    font-size: rem(22px);
+    @include media-breakpoint-down(md) {
+      font-size: rem(18px);
+    }
+  }
+  h3{
+    font-size: rem(20px);
+    @include media-breakpoint-down(md) {
+      font-size: rem(16px);
+    }
+  }
+  h4{
+    font-size: rem(19px);
+    @include media-breakpoint-down(md) {
+      font-size: rem(16px);
+    }
+  }
+  h5{
+    font-size: rem(18px);
+    @include media-breakpoint-down(md) {
+      font-size: rem(14px);
+    }
+  }
+  h6{
+    font-size: rem(17px);
+    @include media-breakpoint-down(md) {
+      font-size: rem(14px);
+    }
+  }
+}

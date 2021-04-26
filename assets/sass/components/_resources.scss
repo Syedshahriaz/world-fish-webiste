@@ -1,0 +1,62 @@
+.resources{
+    .carousel_show_all{
+        margin-right: rem(20px);
+        a{
+            color: $body-gray;
+            text-decoration: underline;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    .carousel_control{
+        display: flex;
+        .carousel_prev{
+            width: rem(36px);
+            height: rem(36px);
+            margin-right: rem(10px);
+            transition: all 0.5s ease;
+            background-size: rem(36px);
+            background-image: url('../../assets/images/icons/prev.png');
+            &:hover{
+                transition: all 0.5s ease;
+                background-image: url('../../assets/images/icons/prev_hover.png');
+            }
+        }
+        .carousel_next{
+            width: rem(36px);
+            height: rem(36px);
+            transition: all 0.5s ease;
+            background-size: rem(36px);
+            background-image: url('../../assets/images/icons/next.png');
+            &:hover{
+                transition: all 0.5s ease;
+                background-image: url('../../assets/images/icons/next_hover.png');
+            }
+        }
+    }
+    .owl-carousel{
+        .item{
+            transition: all 0.5s ease;
+            img{
+                margin-bottom: rem(20px);
+            }
+            h5{
+                line-height: rem(27px);
+            }
+            p{
+                font-size: rem(14px);
+            }
+            a:hover{
+                text-decoration: none;
+                h5{
+                    color: $primary;
+                    transition: all 0.5s ease;
+                }
+            }
+            .owl-dots {
+                display: none;
+            }
+        }
+    }
+}

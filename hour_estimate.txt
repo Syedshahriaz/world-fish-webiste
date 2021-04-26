@@ -1,0 +1,5 @@
+23/04/2021 - Bootstraping (HTML5, CSS3, Bootstrap, SCSS, Gulp, BEM method, CSS Minify) = 2hr
+24/04/2021 - Home page + Responsive view = 3.30hr
+24/04/2021 - Mail Box(with js) = 2hr
+25/04/2021 - Resource details + Responsive view = 3hr
+26/04/2021 - Resource list + Responsive view = 2.30hr

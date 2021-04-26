@@ -1,0 +1,59 @@
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Option B: Include parts of Bootstrap
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+// override default bootstrap config
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: (
+  "primary": #005D7C,
+  "secondary": #282828
+);
+
+// Optional
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/input-group";
+
+// variables
+@import "variables/_variables-loader";
+
+// Foundation
+@import "foundation/_foundation-loader";
+
+// Sass Functions
+@import "sass-functions/sass-functions-loader";
+
+// Sass Mixins
+@import "sass-mixins/_sass-mixins-loader";
+
+// Atoms
+@import "atoms/_atoms-loader";
+
+// Components
+@import "components/components-loader";
+
+// Thirdparty Loader
+@import "thirdparty/_thirdparty-loader";
+
+// Custom
+@import "custom";
