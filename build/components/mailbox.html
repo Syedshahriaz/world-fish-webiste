@@ -1,0 +1,49 @@
+<div class="mailbox"></div>
+
+<div class="mailbox__container">
+    <form action="">
+        <div class="mailbox__container__head">
+            <div><h5>Send Email</h5></div>
+            <div><a class="mailbox__container__close" href="javascript:;"></a></div>
+        </div>
+        <div class="mailbox__container__body">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="mailto-addon1">To:</span>
+                </div>
+                <input type="text" class="form-control" name="mailto" aria-label="mailto" aria-describedby="mailto-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="Subject-addon1">Subject:</span>
+                </div>
+                <input type="text" class="form-control" name="Subject" aria-label="Subject" aria-describedby="Subject-addon1">
+            </div>
+
+            <div class="form-group mb-0">
+                <textarea placeholder="Type here..." class="form-control" id="" name="" rows="8"></textarea>
+            </div>
+        </div>
+
+        <div class="mailbox__container__footer">
+            <button class="btn btn-primary send-mail-btn">
+                <span>Send</span>
+                <img src="../../assets/images/icons/send.png" alt="send icon"/>
+            </button>
+
+            <button class="btn file-btn" type="file">
+                <img src="../../assets/images/icons/paperclip.png" alt="file icon"/>
+                <input type="file" />
+            </button>
+            <button class="btn attachment-btn">
+                <img src="../../assets/images/icons/link.png" alt="link icon"/>
+                <input type="file" />
+            </button>
+            <button class="btn img-btn">
+                <img src="../../assets/images/icons/image.png" alt="image icon"/>
+                <input type="file" />
+            </button>
+        </div>
+    </form>
+</div>
