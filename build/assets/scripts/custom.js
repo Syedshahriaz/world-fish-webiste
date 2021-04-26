@@ -54,3 +54,24 @@ $('.file-btn>input, .attachment-btn>input, .img-btn>input').change(function(){
     input_val = $(this).val();
     alert(input_val);
 });
+
+// main nav slide
+$('.main-nav-toggler').click(function(){
+    if($('.side-menu').hasClass('menu-fixed') == false){
+        $('.header-area #side-menu').addClass('menu-fixed');
+        $('body').addClass('menu-open');
+    }
+});
+
+$(document).on('click', function (event) {
+    if (!$(event.target).closest('#main-nav-toggler, #side-menu').length) {
+        $('.header-area #side-menu').removeClass('menu-fixed');
+        $('body').removeClass('menu-open');
+    }
+});
+
+//sidebar nav
+$(document).on('click','.has-dropdown',function(){
+    $(this).toggleClass('dropdown-open');
+    $(this).children('ul').slideToggle();
+});

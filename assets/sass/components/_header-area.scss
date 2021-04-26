@@ -13,4 +13,78 @@
             text-decoration: underline;
         }
     }
+    .side-menu {
+        top: 0;
+        z-index: 101;
+        right: -100%;
+        width: 400px;
+        height: 100vh;
+        position: fixed;
+        transition: all 0.5s ease;
+        background-color: $white;
+        &.menu-fixed{
+            right: 0;
+            transition: all 0.5s ease;
+        }
+        &>ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            &>li{
+                width: 100%;
+                display: flex;
+                min-height: 47px;
+                align-items: center;
+                &:hover{
+                    background-color: $primary;
+                    a{
+                        color: $white;
+                    }
+                }
+                &.has-dropdown{
+                    flex-direction: column;
+
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        width: 100%;
+                        display: none;
+                        background-color: #F9F9F9;
+                        li{
+                            width: 100%;
+                            display: flex;
+                            min-height: 44px;
+                            align-items: center;
+                            a{
+                                color: #646464;
+                                font-size: rem(16px);
+                                line-height: rem(24px);
+                                padding: rem(10px) rem(60px);
+                            }
+                        }
+                    }
+                    &.dropdown-open{
+                        background-color: #3DC5FF;
+                    }
+                }
+                a{
+                    width: 100%;
+                    color: $mine-shaft;
+                    font-size: rem(18px);
+                    line-height: rem(27px);
+                    padding: rem(10px) rem(30px);
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                &.active{
+                    a{
+                        color: $white;
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
 }
