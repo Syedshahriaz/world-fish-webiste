@@ -1,0 +1,164 @@
+.dashboard-result{
+    &__filter{
+        margin-bottom: rem(30px);
+        .multi-select{
+            .fa.fa-times{
+                height: rem(16px);
+                width: rem(16px);
+                margin-top: 2px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url('../../../assets/images/icons/close.svg');
+            }
+        }
+    }
+    &__sort{
+        margin-bottom: rem(50px);
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(35px);
+        @include media-breakpoint-down(md){
+            flex-direction: column;
+        }
+        h6{
+            color: #AAAAAA;
+            margin-bottom: 0;
+            position: relative;
+            font-size: rem(16px);
+            padding-right: rem(10px);
+            &:after{
+                right: 0;
+                content: '';
+                top: rem(-1px);
+                width: rem(1px);
+                display: block;
+                height: rem(20px);
+                position: absolute;
+                background-color: $silver;
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+            }
+        }
+        p{
+            color: #AAAAAA;
+            margin-bottom: 0;
+            padding-left: rem(10px);
+            & ~ p{
+                padding-left: 0;
+            }
+            &.text-primary, &.text-primary>a{
+                color: $primary;
+            }
+            &.text-info, &.text-info>a{
+                color: #3DC5FF;
+            }
+            &.text-gray, &.text-gray>a{
+                color: #898989;
+            }
+            a{
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__item{
+        text-align: center;
+        padding: rem(30px);
+        margin-bottom: rem(20px);
+        background-color: $lite-white;
+        img{
+            width: 60px;
+            height: 60px;
+            margin-bottom: rem(20px);
+        }
+        h1{
+            margin-bottom: rem(10px);
+        }
+        P{
+            margin-bottom: 0;
+        }
+    }
+    .accordion{
+        .card{
+            margin-bottom: rem(10px);
+            &-header{
+                background-color: $lite-white;
+                .btn{
+                    padding: rem(10px) rem(30px);
+                    color: $mine-shaft;
+                    background-image: url('../../../assets/images/icons/plus-square.svg');
+                    background-position: right rem(20px) center;
+                    background-repeat: no-repeat;
+                    background-size: rem(24px);
+                    padding-right: rem(50px);
+                    transition: all 0.3s ease;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    &[aria-expanded="true"]{
+                        color: $white;
+                        transition: all 0.3s ease;
+                        background-color: $primary;
+                        background-image: url('../../../assets/images/icons/minus-square.svg');
+                    }
+                    &:focus{
+                        box-shadow: none;
+                        text-decoration: none;
+                    }
+                }
+                &>h2>.btn{
+                    &:hover{
+                        color: $white;
+                        transition: all 0.3s ease;
+                        background-color: $primary;
+                        background-image: url('../../../assets/images/icons/minus-square.svg');
+                    }
+                }
+            }
+            .child-card-wrapper.accordion{
+                margin-top: rem(10px);
+                .card-header{
+                    &>h2>.btn{
+                    &:hover{
+                        color: $white;
+                        transition: all 0.3s ease;
+                        background-color: $lite-blue;
+                        background-image: url('../../../assets/images/icons/minus-square.svg');
+                    }
+                }
+                }
+                .btn[aria-expanded="true"]{
+                    background-color: $lite-blue;
+                }
+                .card-body{
+                    padding: rem(15px);
+                    ul{
+                        margin: 0;
+                        li{
+                            margin-bottom: rem(15px);
+                            a{
+                                font-weight: 500;
+                                color: $secondary;
+                                text-decoration: none;
+                                &:hover{
+                                    color: $primary;
+                                    text-decoration: none;
+                                }
+                                &.active{
+                                    color: $primary;
+                                }
+                            }
+                            &:last-child{
+                                margin-bottom: rem(0px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

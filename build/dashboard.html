@@ -1,7 +1,64 @@
-@@include('includes/head.html',{
-    "title": "Resource List"
-})
-    @@include('includes/header.html')
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- all CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <title>Resource List</title>
+</head>
+<body>
+    <div class="header-area">
+    <nav class="main-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex align-items-center h-100">
+                        <a href="#" class="back-icon">
+                            Back
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class=" d-flex align-item-center justify-content-end h-100">
+                        <button class="main-nav-toggler" id="main-nav-toggler" type="button" >
+                            <img src="../assets/images/menu.svg" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="side-menu" id="side-menu">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Results</a></li>
+            <li class="has-dropdown">
+                <a href="#">MEL</a>
+                <ul>
+                    <li><a href="#">KM/CLA</a></li>
+                    <li><a href="#">Survey Maker</a></li>
+                    <li><a href="#">Training Attandance</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <button class="side-menu-close">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 7.5L7.5 22.5" stroke="#4D4D4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.5 7.5L22.5 22.5" stroke="#4D4D4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+
 
     <div class="content-area">
         <div class="resource-list section">
@@ -93,12 +150,10 @@
                             <div class="resource-list__items">
                                 <div class="resource-list__item">
                                     <div class="resource-list__item-img">
-                                        <a href="details.html">
-                                            <img src="../assets/images/resources/list-01.jpg" alt="Resource image"/>
-                                        </a>
+                                        <img src="../assets/images/resources/list-01.jpg" alt="Resource image"/>
                                     </div>
                                     <div class="resource-list__item-info">
-                                        <h5><a href="details.html">Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</a></h5>
+                                        <h5>Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</h5>
                                         <P>Engaging in social media to grow business has become a recent phenomenon. The objective is to inform, inspire...</P>
                                         <div class="details">
                                             <ul>
@@ -111,12 +166,10 @@
 
                                 <div class="resource-list__item">
                                     <div class="resource-list__item-img">
-                                        <a href="details.html">
-                                            <img src="../assets/images/resources/list-02.jpg" alt="Resource image"/>
-                                        </a>
+                                        <img src="../assets/images/resources/list-02.jpg" alt="Resource image"/>
                                     </div>
                                     <div class="resource-list__item-info">
-                                        <h5><a href="details.html">Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</a></h5>
+                                        <h5>Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</h5>
                                         <P>Engaging in social media to grow business has become a recent phenomenon. The objective is to inform, inspire...</P>
                                         <div class="details">
                                             <ul>
@@ -129,10 +182,10 @@
 
                                 <div class="resource-list__item">
                                     <div class="resource-list__item-img">
-                                        <a href="details.html"><img src="../assets/images/resources/list-03.jpg" alt="Resource image"/></a>
+                                        <img src="../assets/images/resources/list-03.jpg" alt="Resource image"/>
                                     </div>
                                     <div class="resource-list__item-info">
-                                        <h5><a href="details.html">Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</a></h5>
+                                        <h5>Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</h5>
                                         <P>Engaging in social media to grow business has become a recent phenomenon. The objective is to inform, inspire...</P>
                                         <div class="details">
                                             <ul>
@@ -145,10 +198,10 @@
 
                                 <div class="resource-list__item">
                                     <div class="resource-list__item-img">
-                                        <a href="details.html"><img src="../assets/images/resources/list-01.jpg" alt="Resource image"/></a>
+                                        <img src="../assets/images/resources/list-01.jpg" alt="Resource image"/>
                                     </div>
                                     <div class="resource-list__item-info">
-                                        <h5><a href="details.html">Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</a></h5>
+                                        <h5>Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</h5>
                                         <P>Engaging in social media to grow business has become a recent phenomenon. The objective is to inform, inspire...</P>
                                         <div class="details">
                                             <ul>
@@ -161,10 +214,10 @@
 
                                 <div class="resource-list__item">
                                     <div class="resource-list__item-img">
-                                        <a href="details.html"> <img src="../assets/images/resources/list-02.jpg" alt="Resource image"/></a>
+                                        <img src="../assets/images/resources/list-02.jpg" alt="Resource image"/>
                                     </div>
                                     <div class="resource-list__item-info">
-                                        <h5><a href="details.html">Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</h5></a>
+                                        <h5>Tilapedia: A Social Media Marketing & Promotion Strategy for Tilapia.</h5>
                                         <P>Engaging in social media to grow business has become a recent phenomenon. The objective is to inform, inspire...</P>
                                         <div class="details">
                                             <ul>
@@ -181,7 +234,69 @@
             </div>
         </div>
     </div>
-    @@include('components/mailbox.html')
-    @@include('includes/footer.html')
+    <div class="mailbox"></div>
 
-@@include('includes/script.html')
+<div class="mailbox__container">
+    <form action="">
+        <div class="mailbox__container__head">
+            <div><h5>Send Email</h5></div>
+            <div><a class="mailbox__container__close" href="javascript:;"></a></div>
+        </div>
+        <div class="mailbox__container__body">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="mailto-addon1">To:</span>
+                </div>
+                <input type="text" class="form-control" name="mailto" aria-label="mailto" aria-describedby="mailto-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="Subject-addon1">Subject:</span>
+                </div>
+                <input type="text" class="form-control" name="Subject" aria-label="Subject" aria-describedby="Subject-addon1">
+            </div>
+
+            <div class="form-group mb-0">
+                <textarea placeholder="Type here..." class="form-control" id="" name="" rows="8"></textarea>
+            </div>
+        </div>
+
+        <div class="mailbox__container__footer">
+            <button class="btn btn-primary send-mail-btn">
+                <span>Send</span>
+                <img src="../../assets/images/icons/send.png" alt="send icon"/>
+            </button>
+
+            <button class="btn file-btn" type="file">
+                <img src="../../assets/images/icons/paperclip.png" alt="file icon"/>
+                <input type="file" />
+            </button>
+            <button class="btn attachment-btn">
+                <img src="../../assets/images/icons/link.png" alt="link icon"/>
+                <input type="file" />
+            </button>
+            <button class="btn img-btn">
+                <img src="../../assets/images/icons/image.png" alt="image icon"/>
+                <input type="file" />
+            </button>
+        </div>
+    </form>
+</div>
+    <div class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../assets/scripts/thirdparty/jquery/jquery-3.3.1.js"></script>
+        <script src="../assets/scripts/thirdparty/bootstrap/popper.min.js"></script>
+        <script src="../assets/scripts/thirdparty/bootstrap/bootstrap.min.js"></script>
+        <script src="../assets/scripts/thirdparty/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../assets/scripts/custom.js"></script>
+    </body>
+</html>

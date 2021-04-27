@@ -146,3 +146,17 @@ select.form-control {
         }
     }
 }
+
+// select pure
+.select-pure__select {
+    border-radius: 0;
+    background-color: $white;
+    border: 1px solid #949494;
+}
+.select-pure__selected-label{
+    color: #585858;
+    border-radius: 0;
+    font-size: rem(14px);
+    background-color: #F4F4F4;
+    border: 1px solid #949494;
+}

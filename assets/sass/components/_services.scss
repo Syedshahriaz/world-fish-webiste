@@ -66,6 +66,10 @@
         }
         .tab-content {
             padding: 20px;
+            @include media-breakpoint-up(md){
+                overflow-y: auto;
+                max-height: 700px;
+            }
         }
         .service-news__item{
             display: flex;
@@ -73,8 +77,8 @@
             .service-news{
                 flex: 1;
                 .title{
-                    color: $secondary;
                     font-weight: 500;
+                    color: $secondary;
                     margin-bottom: rem(5px);
                     a{
                         color: $secondary;
@@ -91,6 +95,9 @@
                     font-size: rem(14px);
                     margin-bottom: 0;
                 }
+            }
+            &:last-child{
+                margin-bottom: 0;
             }
         }
     }
