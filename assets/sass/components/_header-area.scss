@@ -15,54 +15,75 @@
     }
     .side-menu {
         top: 0;
+        right: 0;
         z-index: 101;
-        right: -100%;
         width: 400px;
         height: 100vh;
         position: fixed;
+        padding-top: 29px;
+        padding-bottom: 30px;
         transition: all 0.5s ease;
         background-color: $white;
+        transform: translate(100%,0px);
+        @include media-breakpoint-down(sm){
+            width: 100%;
+        }
         &.menu-fixed{
-            right: 0;
             transition: all 0.5s ease;
+            transform: translate(0%,0px);
         }
         &>ul{
             margin: 0;
             padding: 0;
             list-style: none;
+            max-height: calc(100% - 70px);
+            overflow-y: auto;
             &>li{
                 width: 100%;
                 display: flex;
                 min-height: 47px;
                 align-items: center;
+                transition: all 0.1s ease;
                 &:hover{
                     background-color: $primary;
+                    transition: all 0.1s ease;
                     a{
                         color: $white;
                     }
                 }
                 &.has-dropdown{
                     flex-direction: column;
+                    &:hover{
+                        &>a{
+                            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACRSURBVEhL7Y3RCYAwDEQ7iiM4khu4ghs4gm7gaI5Q7/ACCiK11n5IHhxomssLjuM4/yHG2CAL0mqUDDu5XZZ7hKxI8gHuqkM6jZ+B4rT30+Tc0S6ZNc4DB5LkfNMOeSc1cOhWzpneSBmpgYOXcn5rRspKDRw+yZVvpQYER3kdqQGRyUkdqQHhiAz6dRzH+T0hbPWQ8SIo11DLAAAAAElFTkSuQmCC');                            ;
+                        }
+                    }
                     &>a{
                         padding-right: 50px;
                         position: relative;
                         background-repeat: no-repeat;
                         background-position: right 24px center;
-                        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7ZLBDYAgDEWLJ7g5gqu4ATfYxhGMW7AFIziCboKQwIWUVuMRXkLS/NKXHgow6BCt9fzn31QHSqnNWnvFt0CD1JNSnsaYnRWGEI5cekyaM59qIcRR9wU0NihDkdU5d1M5K8SGy9aUjBQiUuBkrBCRkrJPvD2nQQ88yggsRfu08wEAAAAASUVORK5CYII=');
+                        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADJSURBVHgB7dQxCsIwFIDh1FBwdOxQSjyBLoWUTJ5AbyCexCM4OtojeAO3LFlc3UNwdM/iCziJCXlxEt8PpW3Ky9cpjFEURf1aPPZBSim6rjs1TXNzzt0Zor7vl0KIY2p2EhuuqmoNt01d15ewEUOgYSbMcs4X0f1TmwzDMMIPbOHx4b1fGWOumegMrlFrvSuCMTgGzYJzcCyaDafwEhQFf8LDWgmKht/x1xIaDXGGzFp7btt2DriE12kJ+lVKqQMcMntGURT1Nz0BL8NjPt1xtycAAAAASUVORK5CYII=');
                     }
 
                     ul{
                         margin: 0;
                         padding: 0;
-                        list-style: none;
                         width: 100%;
                         display: none;
+                        list-style: none;
                         background-color: #F9F9F9;
                         li{
                             width: 100%;
                             display: flex;
                             min-height: 44px;
                             align-items: center;
+                            &:hover{
+                                background-color: $primary;
+                                a{
+                                    color: $white;
+                                }
+                            }
                             a{
                                 color: #646464;
                                 font-size: rem(16px);
@@ -75,6 +96,7 @@
                         background-color: #3DC5FF;
                         &>a{
                             color: $white;
+                            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVHgB7c3BCYAwDIXhN4ojOJIbuIIbOIJu4GiOEHMIWIpFA6aH9v3wLoX0AxhjrJtEZNGtqJmCu9xtqFGCnrZ4PENHWyyeo8l7HF5CQ/E3NAT/iv6K6+HkQQv4DG/2weFBH24HMMZYM11SlPEiSgvh6gAAAABJRU5ErkJggg==');
                         }
                     }
                 }
@@ -95,6 +117,13 @@
                     }
                 }
             }
+        }
+        &-close{
+            border: 0;
+            float: none;
+            margin: 30px auto;
+            display: block;
+            background-color: $white;
         }
     }
 }

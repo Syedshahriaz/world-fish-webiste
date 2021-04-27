@@ -75,3 +75,8 @@ $(document).on('click','.has-dropdown',function(){
     $(this).toggleClass('dropdown-open');
     $(this).children('ul').slideToggle();
 });
+
+$('.side-menu-close').click(function(){
+    $('.header-area #side-menu').removeClass('menu-fixed');
+    $('body').removeClass('menu-open');
+});
