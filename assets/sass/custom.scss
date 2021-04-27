@@ -17,6 +17,11 @@ body{
         }
     }
 }
+@media (min-width: 1200px){
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1200px;
+    }
+}
 .section{
     padding-top: rem(30px);
     padding-bottom: rem(30px);
