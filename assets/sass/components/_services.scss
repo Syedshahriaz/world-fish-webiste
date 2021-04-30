@@ -48,15 +48,30 @@
     
     .service-news__wrapper{
         border-radius: 5px;
+        margin-bottom: rem(10px);
         background-color: #FCFCFC;
         .nav-tabs{
             justify-content: space-evenly;
             li{
                 width: 50%;
+                &:first-child{
+                    a{
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 0;
+                    }
+                }
+                &:last-child{
+                    a{
+                        border-top-right-radius: 5px;    
+                        border-top-left-radius: 0;
+                    }
+                }
                 a{
                     color: $mine-shaft;
                     text-align: center;
                     background-color: #F5F5F5;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
                     &.active{
                         color: $white;
                         background-color: $primary;
@@ -98,6 +113,59 @@
             }
             &:last-child{
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    .service-links__wrapper{
+        margin-bottom: rem(10px);
+        .service-links__header{
+            color: $white;
+            background-color: $primary;
+            padding: rem(10px) rem(20px);
+            border-top-left-radius: rem(5px);
+            border-top-right-radius: rem(5px);
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .service-links__body{
+            background-color: #FCFCFC;
+            padding: rem(20px) rem(20px);
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li{
+                    margin-bottom: rem(12px);
+                    a{
+                        font-size: 14px;
+                        display: block;
+                        color: $secondary;
+                        line-height: 21px;
+                        padding-left: 27px;
+                        position: relative;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                        &:before{
+                            left: 0;
+                            top: 1px;
+                            content: '';
+                            display: block;
+                            width: rem(20px);
+                            height: rem(20px);
+                            position: absolute;
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-image: url('../../../assets/images/icons/check.svg');
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }
