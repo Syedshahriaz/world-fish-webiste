@@ -156,7 +156,27 @@ select.form-control {
 .select-pure__selected-label{
     color: #585858;
     border-radius: 0;
-    font-size: rem(14px);
+    font-size: rem(12px);
     background-color: #F4F4F4;
     border: 1px solid #949494;
+}
+
+//custom scrollbar
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }

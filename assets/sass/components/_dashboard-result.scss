@@ -13,7 +13,7 @@
         }
     }
     &__sort{
-        margin-bottom: rem(50px);
+        //margin-bottom: rem(50px);
     }
     &__title{
         display: flex;
@@ -45,6 +45,7 @@
         p{
             color: #AAAAAA;
             margin-bottom: 0;
+            font-size: rem(15px);
             padding-left: rem(10px);
             & ~ p{
                 padding-left: 0;
@@ -82,29 +83,45 @@
             margin-bottom: 0;
         }
     }
+    &__search{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #364150;
+    }
     .accordion{
         .card{
             margin-bottom: rem(10px);
+            &-body{
+                color: $white;
+                font-size: rem(14px);
+                p{
+                    margin-bottom: 0;
+                    font-size: rem(14px);
+                }
+            }
             &-header{
-                background-color: $lite-white;
+                //background-color: $lite-white;
                 .btn{
                     padding: rem(10px) rem(30px);
-                    color: $mine-shaft;
-                    background-image: url('../../../assets/images/icons/plus-square.svg');
+                    //color: $mine-shaft;
+                    color: $white;
+                    background-image: url('../../../assets/images/icons/arrow-down.png');
                     background-position: right rem(20px) center;
                     background-repeat: no-repeat;
-                    background-size: rem(24px);
+                    background-size: rem(16px);
                     padding-right: rem(50px);
                     transition: all 0.3s ease;
-                    &:hover{
-                        text-decoration: none;
-                    }
+                    font-size: rem(15px);
                     &[aria-expanded="true"]{
                         color: $white;
                         transition: all 0.3s ease;
                         background-color: $primary;
-                        background-image: url('../../../assets/images/icons/minus-square.svg');
+                        background-image: url('../../../assets/images/icons/arrow-up.png');
                     }
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    
                     &:focus{
                         box-shadow: none;
                         text-decoration: none;
@@ -115,7 +132,7 @@
                         color: $white;
                         transition: all 0.3s ease;
                         background-color: $primary;
-                        background-image: url('../../../assets/images/icons/minus-square.svg');
+                        //background-image: url('../../../assets/images/icons/minus-square.svg');
                     }
                 }
             }
@@ -123,12 +140,12 @@
                 margin-top: rem(10px);
                 .card-header{
                     &>h2>.btn{
-                    &:hover{
-                        color: $white;
-                        transition: all 0.3s ease;
-                        background-color: $lite-blue;
-                        background-image: url('../../../assets/images/icons/minus-square.svg');
-                    }
+                    // &:hover{
+                    //     color: $white;
+                    //     transition: all 0.3s ease;
+                    //     background-color: $lite-blue;
+                    //     background-image: url('../../../assets/images/icons/minus-square.svg');
+                    // }
                 }
                 }
                 .btn[aria-expanded="true"]{
@@ -141,15 +158,15 @@
                         li{
                             margin-bottom: rem(15px);
                             a{
+                                color: $white;
                                 font-weight: 500;
-                                color: $secondary;
                                 text-decoration: none;
                                 &:hover{
-                                    color: $primary;
-                                    text-decoration: none;
+                                    //color: $primary;
+                                    text-decoration: underline;
                                 }
                                 &.active{
-                                    color: $primary;
+                                    //color: $primary;
                                 }
                             }
                             &:last-child{
