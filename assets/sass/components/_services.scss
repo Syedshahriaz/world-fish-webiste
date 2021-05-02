@@ -7,42 +7,51 @@
         &:hover{
             background-color: $lite-white;
             .services__item__content{
+                color: inherit;
+                text-decoration: none;
                 background-color: $white;
                 transition: all 0.3s ease;
-                a{
-                    color: $white;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-                    background-color: $primary;
-                    background-position: right rem(20px) center;
-                    padding: rem(10px) rem(35px) rem(10px) rem(20px);
-                    background-image: url('../../assets/images/icons/arrow-right-white.svg');
-                }
+                // a{
+                //     color: $white;
+                //     text-decoration: none;
+                //     transition: all 0.3s ease;
+                //     background-color: $primary;
+                //     background-position: right rem(20px) center;
+                //     padding: rem(10px) rem(35px) rem(10px) rem(20px);
+                //     background-image: url('../../assets/images/icons/arrow-right-white.svg');
+                // }
             }
         }
         &__content{
             height: 100%;
             padding: rem(15px); 
+            height: 100%;
+            width: 100%;
+            color: inherit;
+            display: block;
+
             img{
                 max-width: rem(60px);
                 max-height: rem(60px);
                 margin-bottom: rem(30px);
             }
             h1{
+                font-weight: bold;
                 font-size: rem(16px);
-                margin-bottom: rem(5px);
+                margin-bottom: rem(6px);
             }
             P{
-                margin-bottom: rem(20px);
+                font-size: rem(15px);
+                margin-bottom: rem(0px);
             }
-            a{
-                color: $primary;
-                padding-right: rem(15px);
-                background-repeat: no-repeat;
-                background-position: right center;
-                background-size: rem(12px) rem(12px);
-                background-image: url('../../assets/images/icons/arrow-right.svg');
-            }
+            // a{
+            //     color: $primary;
+            //     padding-right: rem(15px);
+            //     background-repeat: no-repeat;
+            //     background-position: right center;
+            //     background-size: rem(12px) rem(12px);
+            //     background-image: url('../../assets/images/icons/arrow-right.svg');
+            // }
         }
     }  
     
