@@ -80,3 +80,10 @@ $('.side-menu-close').click(function(){
     $('.header-area #side-menu').removeClass('menu-fixed');
     $('body').removeClass('menu-open');
 });
+
+// video modal call
+$(document).on('click','.video-list__modal-button',function(){
+    var video_src = $(this).siblings('video').find('source').attr('src');
+    $('#VideoeModal').find('video source').attr('src', video_src)
+    $('#VideoeModal').modal('show');
+});

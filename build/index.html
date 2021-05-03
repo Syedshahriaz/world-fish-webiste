@@ -8,6 +8,7 @@
     <!-- all CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/css/main.min.css">
     <title>Home</title>
 </head>
@@ -84,7 +85,7 @@
                     </div>
         
                     <div class="col-lg-4 col-md-6 services__item">
-                        <a href="#" class="services__item__content">
+                        <a href="dashboard-result.html" class="services__item__content">
                             <img src="../assets/images/services/pie-chart.svg" alt="">
                             <h1>Result Dashboard</h1>
                             <p>Results of the recent projects are continued here.</p>
@@ -310,6 +311,87 @@
                 </a>
                 <p>April 17, 2021</p>
             </div>
+        </div>
+    </div>
+</section>
+        <section class="video-list section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="video-list--large">
+                    <a href="javascript:;" class="video-list__modal-button">
+                    </a>
+                    <video controls autoplay>
+                        <source src="../assets/videos/mov_bbb012.mp4" type="video/mp4" >
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Video title goes here..</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="video-list--small">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <a href="javascript:;" class="video-list__modal-button">
+                            </a>
+                            <video controls autoplay>
+                                <source src="../assets/videos/mov_bbb.mp4" type="video/mp4" >
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-title">Video title goes here..</div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <a href="javascript:;" class="video-list__modal-button">
+                            </a>
+                            <video controls autoplay>
+                                <source src="../assets/videos/mov_bbb.mp4" type="video/mp4" >
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-title">Video title goes here..</div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <a href="javascript:;" class="video-list__modal-button">
+                            </a>
+                            <video controls autoplay>
+                                <source src="../assets/videos/mov_bbb.mp4" type="video/mp4" >
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-title">Video title goes here..</div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <a href="javascript:;" class="video-list__modal-button">
+                            </a>
+                            <video controls autoplay>
+                                <source src="../assets/videos/mov_bbb.mp4" type="video/mp4" >
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-title">Video title goes here..</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="VideoeModal" tabindex="-1" aria-labelledby="VideoeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="VideoeModalLabel">Video title goes here...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <video controls autoplay>
+                        <source src="../assets/videos/mov_bbb.mp4" type="video/mp4" >
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </section>

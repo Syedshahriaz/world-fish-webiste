@@ -11,6 +11,12 @@
                 text-decoration: none;
                 background-color: $white;
                 transition: all 0.3s ease;
+                p{
+                    visibility: visible;
+                    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+                    animation-duration: 0.8s; /* don't forget to set a duration! */
+                    //transition: all 0.3s ease;
+                }
                 // a{
                 //     color: $white;
                 //     text-decoration: none;
@@ -41,8 +47,10 @@
                 margin-bottom: rem(6px);
             }
             P{
+                visibility: hidden;
                 font-size: rem(15px);
                 margin-bottom: rem(0px);
+                //transition: all 0.3s ease;
             }
             // a{
             //     color: $primary;

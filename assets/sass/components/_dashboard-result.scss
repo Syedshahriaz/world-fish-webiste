@@ -5,10 +5,13 @@
             .fa.fa-times{
                 height: rem(16px);
                 width: rem(16px);
-                margin-top: 2px;
+                margin-top: 1px;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-image: url('../../../assets/images/icons/close.svg');
+                &:before{
+                    content: '' !important;
+                }
             }
         }
     }
